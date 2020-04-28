@@ -14,8 +14,4 @@ export class DatabaseApiService {
   getAllProfiles(): Observable<Profile[]> {
     return this.http.get<Profile[]>(`${API_HOST}/api/profiles`);
   }
-
-  getProfile(profileId: string): Observable<Profile> {
-    return this.http.get<Profile>(`${API_HOST}/api/profiles/${profileId}`);
-  }
 }

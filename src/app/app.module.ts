@@ -5,18 +5,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ShowProfileComponent } from './components/show-profile/show-profile.component';
 import { ListProfilesComponent } from './components/list-profiles/list-profiles.component';
 import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ListProfilesComponent,
-    ShowProfileComponent,
-    HomeComponent
-  ],
+  declarations: [AppComponent, ListProfilesComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
