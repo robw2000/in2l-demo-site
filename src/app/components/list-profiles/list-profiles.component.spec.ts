@@ -1,4 +1,14 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  TestBed,
+  ComponentFixture,
+  async,
+  inject
+} from '@angular/core/testing';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import {
+  HttpClientTestingModule,
+  HttpTestingController
+} from '@angular/common/http/testing';
 
 import { ListProfilesComponent } from './list-profiles.component';
 
@@ -8,9 +18,14 @@ describe('ListProfilesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListProfilesComponent ]
-    })
-    .compileComponents();
+      declarations: [ListProfilesComponent],
+      imports: [
+        // no more boilerplate code w/ custom providers needed :-)
+        HttpClientModule,
+        HttpClientTestingModule
+      ]
+    });
+    TestBed.configureTestingModule({}).compileComponents();
   }));
 
   beforeEach(() => {

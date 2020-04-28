@@ -8,9 +8,8 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
-    })
-    .compileComponents();
+      declarations: [HomeComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -21,5 +20,11 @@ describe('HomeComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it(`should have as title 'demo-site'`, () => {
+    fixture = TestBed.createComponent(HomeComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('demo-site');
   });
 });
