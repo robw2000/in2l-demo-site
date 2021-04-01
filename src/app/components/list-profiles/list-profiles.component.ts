@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { DatabaseApiService } from 'src/app/services/database-api.service';
-import { Observable } from 'rxjs';
 import { Profile } from 'src/app/models/profile';
 
 @Component({
