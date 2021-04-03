@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { DatabaseApiService } from 'src/app/services/database-api.service';
 import { Profile } from 'src/app/models/profile';
 
@@ -12,10 +12,12 @@ export class ListProfilesComponent implements OnInit {
   displayedColumns: string[] = ['userId', 'firstName', 'lastName'];
   dataSource: Profile[];
 
-  constructor(private databaseApiService: DatabaseApiService) {}
+  constructor(
+    private databaseApiService: DatabaseApiService
+  ) {}
 
   ngOnInit(): void {
-    this.databaseApiService.getAllProfiles().subscribe(profiles => {
+    this.databaseApiService.getProfiles().subscribe(profiles => {
       this.dataSource = profiles || [];
     });
   }

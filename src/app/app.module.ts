@@ -8,15 +8,20 @@ import { AppComponent } from './app.component';
 import { ListProfilesComponent } from './components/list-profiles/list-profiles.component';
 import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DisplayProfileComponent } from './components/display-profile/display-profile.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { WidgetsComponent } from './components/widgets/widgets.component';
 
 @NgModule({
-  declarations: [AppComponent, ListProfilesComponent, HomeComponent],
+  declarations: [AppComponent, ListProfilesComponent, HomeComponent, DisplayProfileComponent, WidgetsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,7 @@
+<div class="content" role="main">
+  <div *ngIf="loaded">
+    <h1>User ID:&nbsp;{{ profile.userId }}</h1>
+    <h2>Name:&nbsp;{{ profile.firstName }}&nbsp;{{ profile.lastName }}</h2>
+  </div>
+</div>
+<button id="back-button" (click)="back()">Back</button>

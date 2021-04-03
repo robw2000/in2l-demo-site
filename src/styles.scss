@@ -22,6 +22,31 @@ p {
   margin: 0;
 }
 
+button {
+  background-color: #1976d2;
+  border: none;
+  font-size: 1em;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+input {
+  border-color: #1976d2;
+  font-size: 1em;
+  padding: 8px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.form-label {
+  font-size: 1.5em;
+}
+
 .spacer {
   flex: 1;
 }

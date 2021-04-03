@@ -1,3 +1,16 @@
 table {
   width: 100%;
 }
+
+.id-links {
+  color: #fff;
+  padding: 0.5em;
+  background-color: #333333;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #c2c3c4;
+}
+
+.id-links:hover {
+  color: #bcbcbc;
+  box-shadow: 1px 1px 5px #c2c3c4;
+}
