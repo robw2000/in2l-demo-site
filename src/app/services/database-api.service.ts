@@ -12,6 +12,6 @@ export class DatabaseApiService {
   constructor(private http: HttpClient) {}
 
   getAllProfiles(): Observable<Profile[]> {
-    return this.http.get<Profile[]>(`${API_HOST}/api/profiles`);
+    return this.http.get<Profile[]>(`${API_HOST}/api/profiles`, {withCredentials: true});
   }
 }

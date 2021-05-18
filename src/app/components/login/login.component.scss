@@ -1,0 +1,35 @@
+#login-frame {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 150px auto;
+    width: 200px;
+    padding: 20px;
+
+    form {
+        width: initial;
+    }
+    label {
+        display: block;
+    }
+    input, button {
+        border: 1px solid #333;
+        border-radius:5px;
+        box-sizing: border-box;
+        margin:10px 0;
+        padding: 10px;
+        width: 250px;
+    }
+    input {
+        box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    }
+    button {
+        background-color: #3F51B5;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+    
+    .errors {
+        color: red;
+    }
+}
