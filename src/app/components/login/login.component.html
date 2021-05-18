@@ -1,0 +1,14 @@
+<section id="login-frame">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <label for="username">Username:</label>
+        <input [(ngModel)]="userId" required id="username" name="userId" placeholder="Username" type="text" />
+        <label for="password">Password:</label>
+        <input [(ngModel)]="password" required id="password" name="password" placeholder="Password" type="password" />
+        <div class="errors" aria-live="assertive">
+            <p *ngIf="errorMsg">
+                {{ errorMsg }}
+            </p>
+        </div>
+        <button id="submit">Login</button>
+    </form>
+</section>
